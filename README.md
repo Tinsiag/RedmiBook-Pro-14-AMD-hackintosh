@@ -1,25 +1,15 @@
 # macOS on RedmiBook Pro 14 (AMD)
-## Based on [RedmiBook-Pro-14S-hackintosh](https://github.com/SuaveZhou/RedmiBook-Pro-14S-hackintosh)
-## [OpenCore](https://github.com/acidanthera/OpenCorePkg) 0.9.6 
+## [OpenCore](https://github.com/acidanthera/OpenCorePkg) 1.0.1
 ## News
-
-The trackpad is now driven in interrupt mode.
-
 The microphone needs to be downloaded[AMDMicrophone](https://github.com/qhuyduong/AMDMicrophone)For specific use, please check the archive in the warehouse.
-
-## Fix
-
-Fixed cold boot black screen issue.
-
 ## Update
+The new EFI has been adapted to the latest system, Sonoma.
 
-The new EFI has been adapted to the latest system, Ventura.
-
-Online update is supported, but you need to pay attention to update first (do not update the EFI file), and then update the EFI when the card progress bar is completed after the update is completed.
-
-The new EFI (Ventura) are updated with the latest drivers and OpenCore, and this update improves the boot speed, almost seconds.
+The new EFI (Sonoma) are updated with the latest drivers and OpenCore, and this update improves the boot speed, almost seconds.
 
 Remember to replace your three yards.
+
+
 
 ## Specifications
 
@@ -32,8 +22,8 @@ Wi-Fi             | MT7921 replaced with Intel® Wi-Fi 6 AX210
 Audio       | Realtek High Definition Audio
 
 ## macOS Update History
-
-- ✅ macOS Ventura [dmg from here](https://mp.weixin.qq.com/s/udyAQoc_0rmZ5HJevFlN9A)
+- ✅ macOS Sonoma 
+- ✅ macOS Ventura [old README](EFI/README.md)
 
 ## What's working
 
@@ -48,13 +38,14 @@ Battery Status | ✅
 Shutdown / Reboot |✅
 Bluetooth |✅
 Sleep |✅
-Microphone |⚠️
+Microphone | ✅
 ## What's not working
 
 Type | Info | Status
 :---------|:---------|:----------
 USB | At the moment we need to disable one of the two USB controllers, so the ports connected to it will NOT work even in other OSes, until the setting is reverted in UMAF. | ⚠️
 Airdrop | Airdrop is not working.|❌
+
 ## Instructions
 
 ### Pre-Installation
@@ -72,7 +63,7 @@ Please use OCAT to modify config.plist, not Propertree.
 
 Please use GenSMBIOS to generate your three codes and change them!!!
 
-NootedRed needs to be disabled initially, and it can only be turned on after the installation is completed.
+NootedRed be disabled initially, and it can only be turned on after the installation is completed.
 
 
 ## Kexts used
